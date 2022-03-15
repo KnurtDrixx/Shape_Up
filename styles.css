@@ -24,3 +24,19 @@
   height: 0px;
   width: 0px;
 }
+
+#rectLength {
+  background-color: #f10c0c;
+}
+#rectWidth {
+  background-color: blue;
+}
+#squareSideLength {
+  background-color: rgb(8, 236, 38);
+}
+#circleRadius {
+  background-color: rgb(236, 13, 207);
+}
+#triangleHeight {
+  background-color: rgb(177, 238, 10);
+}

@@ -16,26 +16,58 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="canvas" id="canvas"></div>
-    <div id="shapeInputs">
-      <div id="rectInputHolder">
-        <input type="number" id="rectLength" />
-        <input type="number" id="rectWidth" />
-        <button id="rectInsert">Spawn a Rectangle</button>
+    <div class="container d-flex flex">
+      <div class="canvas col-md-8" id="canvas"></div>
+      <div class="dataHolder col-md-2">
+        <div>
+          Shape Name
+          <input id="shapeNameInput" readonly type="text" value="Shape" />
+        </div>
+        <div>
+          Width
+          <input id="widthInput" readonly type="text" value="width" />
+        </div>
+        <div>
+          Height
+          <input id="heightInput" readonly type="text" value="Height" />
+        </div>
+        <div>
+          Radius
+          <input id="radiusInput" readonly type="text" value="Radius" />
+        </div>
+        <div>
+          Area
+          <input id="areaInput" readonly type="text" value="Area" />
+        </div>
+        <div>
+          Perimeter
+          <input id="Perimeter" readonly type="text" value="Perimeter" />
+        </div>
       </div>
-      <div id="squareInputHolder">
-        <input type="number" id="squareSideLength" />
-        <button id="squareInsert">Spawn a Square</button>
-      </div>
-      <div id="circleHolder">
-        <input type="number" id="circleRadius" />
-        <button id="circleInsert">Spawn a Circle</button>
-      </div>
-      <div id="triangleHolder">
-        <input type="number" id="triangleHeight" />
-        <button id="triangleInsert">Spawn a Triangle</button>
+
+      <div class="col-md-2">
+        <div id="shapeInputs">
+          <div id="rectInputHolder">
+            <input type="number" id="rectLength" />
+            <input type="number" id="rectWidth" />
+            <button class="btn btn-primary" id="rectInsert">Spawn a Rectangle</button>
+          </div>
+          <div id="squareInputHolder">
+            <input type="number" id="squareSideLength" />
+            <button class="btn btn-secondary" id="squareInsert">Spawn a Square</button>
+          </div>
+          <div id="circleHolder">
+            <input type="number" id="circleRadius" />
+            <button class="btn btn-danger" id="circleInsert">Spawn a Circle</button>
+          </div>
+          <div id="triangleHolder">
+            <input type="number" id="triangleHeight" />
+            <button class="btn btn-warning" id="triangleInsert">Spawn a Triangle</button>
+          </div>
+        </div>
       </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="app.js"></script>
   </body>
